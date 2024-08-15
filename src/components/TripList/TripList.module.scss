@@ -1,0 +1,19 @@
+.triplist {
+  display: flex;
+  align-items: start;
+  gap: 1.375rem;
+  padding-bottom: 2rem;
+}
+
+@media all and (max-width: 900px) {
+  .triplist {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+
+    &__box {
+      flex-direction: column;
+    }
+  }
+}

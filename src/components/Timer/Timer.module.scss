@@ -1,0 +1,48 @@
+.timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      margin: 0;
+      text-transform: uppercase;
+    }
+  }
+
+  &__numbers {
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+
+  &__words {
+    font-size: 0.8rem;
+    font-weight: 300;
+  }
+}
+
+@media all and (max-width: 1450px) {
+  .timer {
+    gap: 2rem;
+
+    &__numbers {
+      font-size: 1.3rem;
+    }
+
+    &__words {
+      font-size: 0.6rem;
+    }
+  }
+}
+
+@media all and (max-width: 900px) {
+  .timer {
+    gap: 2rem;
+  }
+}

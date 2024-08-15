@@ -1,0 +1,72 @@
+.tripcard {
+  border: 3px solid #f9f9f9;
+  border-radius: 0.313rem;
+  transition: all 0.5s ease;
+  background-color: #fff;
+  position: relative;
+  cursor: pointer;
+
+  &__image {
+    width: 12rem;
+    height: 11rem;
+  }
+
+  &__info {
+    padding: 0.8rem;
+  }
+
+  &__city {
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 0.2rem;
+  }
+
+  &__dates {
+    font-size: 0.8rem;
+    color: darkgray;
+    margin: 0;
+  }
+
+  &__btnclose {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: transparent;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+
+    :hover {
+      background-color: rgba(24, 28, 76, 1);
+    }
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    background-color: #f2efef;
+    transition: all 0.5s ease;
+  }
+
+  &:focus {
+    border-color: red;
+  }
+}
+
+@media all and (max-width: 1450px) {
+  .tripcard {
+    &__image {
+      width: 8rem;
+      height: 7rem;
+    }
+
+    &__city {
+      font-size: 0.8rem;
+    }
+
+    &__dates {
+      font-size: 0.5rem;
+    }
+  }
+}

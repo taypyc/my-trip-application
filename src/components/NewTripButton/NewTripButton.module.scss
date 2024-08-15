@@ -1,0 +1,26 @@
+.newtripbutton {
+  display: inline-block;
+  align-items: center;
+  width: 11.2rem;
+  height: 11.2rem;
+  background-color: #f2f4f8;
+  font-weight: 700;
+  border: none;
+  transition: background-color 0.4s ease;
+  color: #000;
+  cursor: pointer;
+  font-size: 1.25rem;
+
+  &:hover {
+    background-color: #c9cbcf;
+    transition: background-color 0.4s ease;
+  }
+}
+
+@media all and (max-width: 1450px) {
+  .newtripbutton {
+    width: 7rem;
+    height: 7rem;
+    font-size: 1rem;
+  }
+}
